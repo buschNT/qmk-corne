@@ -58,10 +58,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LALT,   MO(_ADJUST),  KC_SPC,     KC_ENT, _______, KC_RALT
     ),
 
-    [_ADJUST] = LAYOUT_split_3x6_
+    [_ADJUST] = LAYOUT_split_3x6_3(
         DF(_QWERTZ_ZY), DF(_COLEMAK_DH),    KC_NO,      KC_NO,      KC_NO, QK_BOOT,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        RGB_MOI,        RGB_HUI,            RGB_SAI,    RGB_VAI,    KC_NO, KC_NO,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        RGB_MOD,        RGB_HUD,            RGB_SAD,    RGB_VAD,    KC_NO, KC_NO,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        RGB_MOD,        RGB_HUI,            RGB_SAI,    RGB_VAI,    KC_NO, KC_NO,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        RGB_RMOD,       RGB_HUD,            RGB_SAD,    RGB_VAD,    KC_NO, KC_NO,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
   )
 };
