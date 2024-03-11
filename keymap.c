@@ -32,23 +32,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_COLEMAK_DH] = LAYOUT_split_3x6_3(
         KC_ESC,     KC_Q,           KC_W,           KC_F,           KC_P,           KC_B,       KC_J,   KC_L,           KC_U,           KC_Y,           KC_SCLN,        KC_BSPC,
         KC_TAB,     LGUI_T(KC_A),   LALT_T(KC_R),   LSFT_T(KC_S),   LCTL_T(KC_T),   KC_G,       KC_M,   RCTL_T(KC_N),   RSFT_T(KC_E),   LALT_T(KC_I),   RGUI_T(KC_O),   KC_DEL,
-        RGB_TOG,    KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,       KC_K,   KC_H,           KC_COMM,        KC_DOT,         KC_SLASH,       KC_NO,
-        KC_NO,      MO(_SYMBOL),    KC_SPC,                                                     KC_ENT, MO(_FUNCTION),  KC_NO
+        KC_LCTL,    KC_Z,           KC_X,           KC_C,           KC_D,           KC_V,       KC_K,   KC_H,           KC_COMM,        KC_DOT,         KC_SLASH,       KC_NO,
+        RGB_TOG,    MO(_SYMBOL),    KC_SPC,                                                     KC_ENT, MO(_FUNCTION),  KC_NO
     ),
 
     [_QWERTZ_ZY] = LAYOUT_split_3x6_3(
         KC_ESC,     KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,       KC_Y,   KC_U,           KC_I,           KC_O,           KC_P,               KC_BSPC,
         KC_TAB,     LGUI_T(KC_A),   LALT_T(KC_S),   LSFT_T(KC_D),   LCTL_T(KC_F),   KC_G,       KC_H,   RCTL_T(KC_J),   RSFT_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_SCLN),    KC_DEL,
-        RGB_TOG,    KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,       KC_N,   KC_M,           KC_COMM,        KC_DOT,         KC_SLASH,           KC_NO,
-        KC_NO,      MO(_SYMBOL),    KC_SPC,                                                     KC_ENT, MO(_FUNCTION),  KC_NO
+        KC_LCTL,    KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,       KC_N,   KC_M,           KC_COMM,        KC_DOT,         KC_SLASH,           KC_NO,
+        RGB_TOG,    MO(_SYMBOL),    KC_SPC,                                                     KC_ENT, MO(_FUNCTION),  KC_NO
     ),
 
     // WARNING! I use a german layout, the behavior of the keys may be different on your keyboard
     [_SYMBOL] = LAYOUT_split_3x6_3(
-        KC_ESC,     KC_1,               KC_2,               KC_3,               KC_4,                   KC_5,                       KC_6,           KC_7,                   KC_8,                   KC_9,                   KC_0,                   KC_BSPC,
-        KC_TAB,     KC_GRV,             S(KC_GRV),          KC_NUBS,            S(KC_NUBS),             RALT(KC_NUBS),              KC_NO,          RALT(KC_7),             RALT(KC_8),             RALT(KC_9),             RALT(KC_0),             KC_DEL,
-        KC_LSFT,    KC_MINS,            KC_EQL,             S(KC_EQL),          S(KC_MINS),             RALT(KC_MINS),              RALT(KC_RBRC),  KC_RBRC,                S(KC_RBRC),             KC_NUHS,                S(KC_NUHS),             KC_RSFT,
-        SH_TT,      _______,            KC_SPC,                                                                                     KC_ENT,         MO(_ADJUST),            QK_REP
+        KC_ESC,     KC_GRV,             S(KC_GRV),          KC_NUBS,            S(KC_NUBS),             RALT(KC_NUBS),  KC_NO,          RALT(KC_7),     RALT(KC_8),     RALT(KC_9),     RALT(KC_0),     KC_BSPC,
+        KC_TAB,     LGUI_T(KC_1),       LALT_T(KC_2),       LSFT_T(KC_3),       LCTL_T(KC_4),           KC_5,           RCTL_T(KC_6),   RSFT_T(KC_7),   LALT_T(KC_8),   RGUI_T(KC_9),   KC_0,           KC_DEL,
+        KC_LSFT,    KC_MINS,            KC_EQL,             S(KC_EQL),          S(KC_MINS),             RALT(KC_MINS),  RALT(KC_RBRC),  KC_RBRC,        S(KC_RBRC),     KC_NUHS,        S(KC_NUHS),     KC_RSFT,
+        SH_TT,      _______,            KC_SPC,                                                                         KC_ENT,         MO(_ADJUST),    QK_REP
     ),
 
     [_FUNCTION] = LAYOUT_split_3x6_3(
@@ -65,4 +65,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LGUI,        _______,            KC_SPC,                                         KC_ENT,     _______,    KC_RALT
   )
 };
-
