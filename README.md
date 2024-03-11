@@ -22,6 +22,8 @@ qmk compile -e CONVERT_TO=promicro_rp2040 -kb crkbd/rev1 -km my
 
 - https://getreuer.info/posts/keyboards/symbol-layer/index.html
 
+TODO: https://docs.qmk.fm/#/mod_tap?id=intercepting-mod-taps
+
 ## german layout
 
 - https://mechanische-tastaturen.net/qmk-und-via-guide/qmk-via-keycodes-fuer-deutsche-zeichen/
